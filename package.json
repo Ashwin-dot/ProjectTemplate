@@ -34,8 +34,8 @@
   },
   "lint-staged": {
     "*.ts": [
-      "npm run prettier:fix",
-      "npm run lint:fix"
+      "npx run prettier:fix",
+      "npx run lint:fix"
     ]
   }
 }
