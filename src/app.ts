@@ -5,7 +5,7 @@ import logger from './config/logger'
 const app = express()
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome ALl of You')
+  res.status(200).send('Welcome ALl of You')
 })
 
 //global error handler
