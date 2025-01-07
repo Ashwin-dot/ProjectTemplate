@@ -1,3 +1,15 @@
-console.log('Welcome ALl')
+import { Config } from "./config"
+import app from "./app"
 
-console.log('Welcome All')
+const startServer= () => {
+    const PORT = Config.PORT;
+
+try {
+    app.listen(PORT, ()=>{
+        console.log(`App listening on PORT  :` + PORT )
+    })
+} catch (error) {
+ console.error(error)   
+}
+}
+startServer()
